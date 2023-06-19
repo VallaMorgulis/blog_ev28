@@ -8,7 +8,7 @@ class LikeUserSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Like
-        exclude = ('post', )
+        exclude = ('post',)
 
 
 class LikeSerializer(serializers.ModelSerializer):
@@ -28,6 +28,7 @@ class LikeSerializer(serializers.ModelSerializer):
             )
         return attrs
 
+
 class FavoriteSerializer(serializers.ModelSerializer):
     class Meta:
         model = Favorite
@@ -39,7 +40,3 @@ class FavoriteSerializer(serializers.ModelSerializer):
         preview = instance.post.preview
         repr['post_preview'] = preview.url if preview else None
         return repr
-
-
-
-
