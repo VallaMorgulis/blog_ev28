@@ -7,3 +7,4 @@ dj_rest_auth
 drf-yasg
 django-filter
 gunicorn
+coreapi
