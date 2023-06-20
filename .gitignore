@@ -3,6 +3,6 @@
 venv
 media
 **/migrations/*
-!**/migration/__init__.py
+!**/migrations/__init__.py
 __pycache__/
 .vscode
